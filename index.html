@@ -1,2 +1,102 @@
-<h1>Hi, I’m Gurpreet 👋</h1>
-<p>This is my personal website. I’m learning and building things step by step.</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Power Apps Style Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Segoe UI, Arial, sans-serif;
+      background-color: #f3f2f1;
+    }
+
+    /* Top bar */
+    .topbar {
+      background-color: #0078d4;
+      color: white;
+      padding: 12px 20px;
+      font-size: 18px;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      height: calc(100vh - 48px);
+    }
+
+    /* Left navigation */
+    .sidebar {
+      width: 220px;
+      background-color: #ffffff;
+      border-right: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .sidebar h3 {
+      font-size: 14px;
+      color: #605e5c;
+      margin-top: 20px;
+    }
+
+    .nav-item {
+      padding: 8px;
+      margin: 4px 0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .nav-item:hover {
+      background-color: #edebe9;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    Power Apps Model-Driven App (Demo)
+  </div>
+
+  <!-- Main layout -->
+  <div class="container">
+
+    <!-- Left navigation -->
+    <div class="sidebar">
+      <h3>Tables</h3>
+      <div class="nav-item">Accounts</div>
+      <div class="nav-item">Contacts</div>
+      <div class="nav-item">Opportunities</div>
+
+      <h3>Pages</h3>
+      <div class="nav-item">Dashboard</div>
+      <div class="nav-item">Settings</div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="card">
+        <h2>Welcome 👋</h2>
+        <p>This page mimics a Power Apps model-driven app layout.</p>
+        <p>You can use this area to describe your Power Platform experience.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
